@@ -1,13 +1,14 @@
 module Diffhub
   class Cli
-    attr_reader :args
+    attr_reader :args, :github
 
     def initialize(args=[])
       @args = args
+      @github = GitHub.new
     end
 
     def execute!
-      # nothing to do here yet
+      github.upload_diff!
     end
   end
 end
