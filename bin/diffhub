@@ -2,4 +2,5 @@
 
 require 'diffhub'
 
-Diffhub::Cli.execute!
+cli = Diffhub::Cli.new(ARGV)
+cli.execute!

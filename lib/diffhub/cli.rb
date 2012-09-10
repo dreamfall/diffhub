@@ -2,8 +2,12 @@ module Diffhub
   class Cli
     attr_reader :args
 
-    def self.execute!
-      p ARGV
+    def initialize(args=[])
+      @args = args
+    end
+
+    def execute!
+      # nothing to do here yet
     end
   end
 end
